@@ -79,7 +79,7 @@ app.use((request, response) => {
      error:'Not Found' 
     })  
 })
-const PORT = 3001;
+const PORT = procces.env || 3001;
 app.listen(PORT, () => {
   console.log(`Starting server on port ${PORT}`);
 });
